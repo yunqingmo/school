@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/map/map",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTitleText": "幼儿园",
+    "navigationBarTextStyle":"black"
+  },
+  "debug": false
+}

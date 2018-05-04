@@ -1,0 +1,39 @@
+<view>
+  <map
+        id="myMap"
+        style="width: 100%; height: 400px;"
+        latitude="{{centerY}}"
+        longitude="{{centerX}}"
+        markers="{{markers}}"
+        show-location
+        scale="14"
+        bindmarkertap="markertap"
+        controls="{{controls}}"
+        bindcontroltap="controltap"
+  ></map> 
+</view>
+<view class='today-container'>
+<!--滑块-->
+    <swiper duration="600" bindchange="changeEmail" current="{{currentEmail}}">
+      <block wx:for="{{emails}}" wx:key="id">
+        <swiper-item class="{{index == currentEmail? 'active': ''}}">
+          <view>
+            <view class="author">
+              <image src="../../image/personal.png" mode="scaleToFill"></image>
+              <view>
+                <text class="name">{{item.name}}</text>
+                <br/>
+                <text class="des">{{item.level}}</text>
+              </view>
+            </view>
+            <view class="title">{{item.address}}</view>
+            <view class="content">
+              <text class="other">{{item.phone}}</text>
+               <button bindtap="goToUrl" data-gotoUrl="../logs/logs">查看详情</button>
+            </view>
+          </view>
+          <image src="../../image/today/email_bg01.jpg" class="slide-image" mode="scaleToFill" />
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
