@@ -29,7 +29,7 @@
             <view class="title">{{item.address}}</view>
             <view class="content">
               <text class="other">{{item.phone}}</text>
-               <button bindtap="goToUrl" data-gotoUrl="../logs/logs">查看详情</button>
+               <button bindtap="goToUrl" data-gotoUrl="../school/school?id={{item.id}}">查看详情</button>
             </view>
           </view>
           <image src="../../image/today/email_bg01.jpg" class="slide-image" mode="scaleToFill" />

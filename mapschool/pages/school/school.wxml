@@ -1,0 +1,13 @@
+<view>
+  <image class='poster' src='{{school.imgurl}}' backgrount-size='cover'></image>
+  <view class='meta'>
+    <text class='title'>{{school.name}}</text>
+    <text class='info'>级别：{{school.level}}</text>
+    <text class='info'>地点：{{school.address}}</text>
+    <text class='info'>电话：{{school.phone}}</text>
+  </view>
+  <view class='summary'>
+    <text class='content'>{{school.introduction}}\n\n</text>
+    <text class='content'>招生简章：{{school.regulations}}</text>
+  </view>
+</view>

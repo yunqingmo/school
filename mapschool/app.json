@@ -2,7 +2,8 @@
   "pages":[
     "pages/map/map",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/school/school"
   ],
   "window":{
     "backgroundTextStyle":"light",
